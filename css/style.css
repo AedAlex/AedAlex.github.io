@@ -178,19 +178,19 @@ ul {
 }
 
 .agua {
-    background-image: url(../images/mar.jpg);
+    background-image: url(/Clase_7/AedAlex.github.io/images/mar.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .lupulo {
-    background-image: url(../images/lupulo2.jpg);
+    background-image: url(/Clase_7/AedAlex.github.io/images/lupulo2.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .granos {
-    background-image: url(../images/granos.jpg);
+    background-image: url(/Clase_7/AedAlex.github.io/images/granos.jpg);
     background-size: cover;
     background-position: center;
 }
