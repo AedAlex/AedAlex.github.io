@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(4px);
+}
+
+.PrincipalFrame {
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar {
+    background-color: rgba(100, 96, 91, 0.9);
+    font-size: larger;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-link {
+    color: whitesmoke;
+}
+
+.nav-link:hover {
+    color: goldenrod;
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    justify-content: end;
+}
+
+@media (min-width:1024px) {
+    .home {
+        display: flex;
+    }
+
+    .intro {
+        width: 35%;
+    }
+
+    .intro h1 {
+        font-size: 2.2rem;
+    }
+
+    .fotos {
+        width: 65%;
+    }
+
+    .pic {
+        width: 70vw;
+    }
+
+    .boton {
+        margin-top: 2rem;
+    }
+
+}
+
+.home {
+    overflow-y: hidden;
+    justify-content:flex-start;
+}
+
+.intro {
+    position: static;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(43, 43, 43);
+    color: goldenrod;
+    line-height:2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.intro h1 {
+    padding-top: 2rem;
+    color: rgb(214, 18, 60);
+    font-weight: 700;
+}
+
+.boton {
+    margin-top: 1rem;
+    background-color:rgb(100, 96, 91);
+}
+
+.boton a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-weight: bolder;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.boton a:hover {
+    color: rgb(214, 18, 60);
+}
+
+
+.fotos {
+    display: flex;
+    overflow: hidden;
+}
+
+.contfoto {
+    height: 100vh;
+
+}
+
+.pic {
+    width: 100vw;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    animation-duration: 15s;
+    animation-name: trancision;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes trancision {
+    33% {
+        margin-left: 0%;
+    }
+    43% {
+        margin-left: -100%;
+    }
+    66% {
+        margin-left: -100%;
+    }
+    76% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: -200%;
+    }
+}
+
+
+/*Productos*/
+
+.ingredientes {
+    height: 100vh;
+    width: 100%;
+}
+
+.ing {
+    width: 100%;
+    height: 66%;
+}
+
+.ingintro {
+    justify-content: center;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    background-color:rgb(43, 43, 43);
+}
+
+.ingintro h2 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: rgb(214, 18, 60);
+    font-weight: 700;
+}
+
+.ingintro p {
+    margin: auto;
+    width: 40%;
+    line-height:2rem;
+}
+
+.agua {
+    background-image: url(/Proyecto/images/mar.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.lupulo {
+    background-image: url(/Proyecto/images/lupulo2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.granos {
+    background-image: url(/Proyecto/images/granos.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.footer{
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
