@@ -149,11 +149,17 @@ ul {
 .ingredientes {
     height: 100vh;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .ing {
-    width: 100%;
-    height: 66%;
+    align-items: center;
+    background-color:whitesmoke;
+    justify-content: center;
+    position: relative;
+    width: 98.5vw;
+    height:50%;
 }
 
 .ingintro {
@@ -177,23 +183,91 @@ ul {
     line-height:2rem;
 }
 
-.agua {
-    background-image: url(/Clase_7/AedAlex.github.io/images/mar.jpg);
-    background-size: cover;
-    background-position: center;
+.agua img {
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    z-index: 10;
 }
 
-.lupulo {
-    background-image: url(/Clase_7/AedAlex.github.io/images/lupulo2.jpg);
-    background-size: cover;
-    background-position: center;
+.agua img:hover {
+    filter: blur(3px) grayscale(70%) brightness(.4);
+    width: 50%;
+    transition-duration: .5s;
 }
 
-.granos {
-    background-image: url(/Clase_7/AedAlex.github.io/images/granos.jpg);
-    background-size: cover;
-    background-position: center;
+.agua:hover .desc {
+    display:block;
+    margin-left: 50%;
+    transition-duration: 3s;
 }
+
+.lupulo img {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    z-index: 10;
+}
+
+.lupulo img:hover {
+    filter: blur(3px) grayscale(70%) brightness(.4);
+    width: 50%;
+    transition-duration: .5s;
+}
+
+.lupulo:hover .desc {
+    display:block;
+    margin-left: 50%;
+    transition-duration: 3s;
+}
+
+.granos img {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    z-index: 10;
+}
+
+.granos img:hover {
+    filter: blur(3px) grayscale(70%) brightness(.4);
+    width: 50%;
+    transition-duration: .5s;
+}
+
+.granos:hover .desc {
+    display:block;
+    margin-left: 50%;
+    transition-duration: 3s;
+}
+
+.desc {
+    display: none;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    z-index: 100;
+    margin-top: -20%;
+    margin-left: 100%;
+}
+
+.desc h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.2rem;
+    font-weight: bolder;
+    color:goldenrod;
+    margin-bottom: 2rem;
+}
+
+.desc p {
+    margin: auto;
+    width: 50%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: rgb(43, 43, 43);
+}
+
 
 .footer{
     text-align: center;
